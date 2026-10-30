@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Backtest artifacts (rebuild from the 1-minute CSV)
+python/nq_backtest/cache/
+python/nq_backtest/results/*.parquet
+*.npz
+
+# NinjaTrader local build
+ninjascript/**/bin/
+ninjascript/**/obj/
+*.dll
+*.pdb
+agig-build.proj
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.user
+
+# Secrets
+.env
+.env.*
+credentials.json
